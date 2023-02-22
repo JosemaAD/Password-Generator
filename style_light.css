@@ -3,7 +3,7 @@ body{
     color: #2B283A;
 }
 
-p{
+p, label{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -12,13 +12,18 @@ p{
     color: #6B7280;
 }
 
+label{
+    font-size: 13px;
+    margin-left: 15px;
+}
+
 hr{
     margin-top: 35px;
     border-top: 1px solid #D5D4D8
 }
 
 section{
-    
+    display: block;    
     margin: 0 auto;
     width: 550px;
     height: 550px;
@@ -48,6 +53,15 @@ h1{
     letter-spacing: -0.025em;
 }
 
+h2{
+    font-family: 'Karla', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: -0.025em;    
+    margin: 20px 0 0;
+}
+
 .green-color{
     color: #4ADF86;
 }
@@ -74,6 +88,17 @@ button:hover{
 .togler{
     background-color: #273549;
     border-radius: 100%;
+}
+
+.length-section{
+    margin-top: 20px;
+}
+
+.password-lenght{
+    background: none;
+    border: 1px solid #4ADF86;
+    color: #4ADF86;
+    width: 50px;
 }
 
 .password-options{
@@ -115,4 +140,7 @@ button:hover{
     .password-options{
         display: block;
     }
+    .password-lenght{
+        min-width: 50px;
+    }    
 }
