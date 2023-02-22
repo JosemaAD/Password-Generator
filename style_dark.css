@@ -3,13 +3,18 @@ body{
     color: #fff;
 }
 
-p{
+p, label{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
     color: #D5D4D8;
+}
+
+label{
+    font-size: 13px;
+    margin-left: 15px;
 }
 
 hr{
@@ -39,13 +44,22 @@ section{
     justify-content: flex-end !important;
 }
 
-h1{
+h1,h2,h3,h4{
     font-family: 'Karla', sans-serif;
     font-style: normal;
+    letter-spacing: -0.025em;
+}
+
+h1{
     font-weight: 800;
     font-size: 40px;
     line-height: 40px;
-    letter-spacing: -0.025em;
+}
+
+h2{
+    font-weight: 800;
+    font-size: 30px; 
+    margin: 20px 0 0;
 }
 
 .green-color{
@@ -65,7 +79,6 @@ button, input{
     padding: 10px 15px;
     border: none;
     transition: 0.5s;
-    display: block;
 }
 
 button:hover{
@@ -75,6 +88,17 @@ button:hover{
 .togler{
     background-color: #10B981;
     border-radius: 100%;
+}
+
+.length-section{
+    margin-top: 20px;
+}
+
+.password-lenght{
+    background: none;
+    border: 1px solid #4ADF86;
+    color: #4ADF86;
+    width: 50px;
 }
 
 .password-options{
@@ -115,5 +139,8 @@ button:hover{
     }
     .password-options{
         display: block;
+    }
+    .password-lenght{
+        min-width: 50px;
     }
 }

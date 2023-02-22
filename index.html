@@ -27,7 +27,12 @@
         <h1>Generate a <span class="green-color">random password</span></h1>
         <p>Never use an insecure password again.</p>
         <button id="generator-el" onclick="newPassword()">Generate Password</button>
+        <div class="length-section">
+            <label>Password's lenght</label>
+            <input id="length-password" class="password-lenght" value="15" type="number">
+        </div>
         <hr>
+        <h2>Here you have your passwords:</h2>
         <div class="password-options">
             <input type="button" class="password-first-opt"  value="" id="first-option-el" onclick="copyToClipboard(firstOption)">
             <input type="button" class="password-first-opt"  value="" id="second-option-el" onclick="copyToClipboard(secondOption)">

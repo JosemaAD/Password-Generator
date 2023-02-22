@@ -6,6 +6,7 @@ let secondOption = document.getElementById('second-option-el')
 let succesCopy = document.getElementById('succes-copy')
 let togler = document.querySelector("#togler")
 let theme = document.querySelector("#theme-link")
+let numberCharacters = document.getElementById('length-password')
 
 function randomCharacter(){
     let rand = Math.floor( Math.random() * characters.length )
@@ -13,13 +14,15 @@ function randomCharacter(){
 }
 
 function newPassword(){
+    let longitud = numberCharacters.value
     let password = []
     let passwordAlt = []
-    for( let i = 0; i < 16; i++){
+
+    for( let i = 0; i < longitud; i++){
         password.push(randomCharacter())
         passwordAlt.push(randomCharacter())
     }  
-
+    succesCopy.textContent = ''
     printPassword(password, passwordAlt) 
 }
 
@@ -56,5 +59,5 @@ togler.addEventListener("click", function() {
   } else if(theme.getAttribute("href") == "style_dark.css") {
         theme.href = "style_light.css";
   }
-  
+
 });
