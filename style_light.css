@@ -18,7 +18,7 @@ hr{
 }
 
 section{
-    display: block;
+    
     margin: 0 auto;
     width: 550px;
     height: 550px;
@@ -65,7 +65,6 @@ button, input{
     padding: 10px 15px;
     border: none;
     transition: 0.5s;
-    display: block;
 }
 
 button:hover{
@@ -104,9 +103,16 @@ button:hover{
 **/
 @media (max-width: 550px) {
     section{
-        width: 100%;
+        max-width: 100%;
+        width: auto;
     }
     .password-first-opt{
         width: 100%;
     }
-  }
+    button, input{
+        min-width: 100%
+    }
+    .password-options{
+        display: block;
+    }
+}

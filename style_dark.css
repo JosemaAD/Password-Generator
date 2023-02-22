@@ -104,6 +104,16 @@ button:hover{
 **/
 @media (max-width: 550px) {
     section{
+        max-width: 100%;
+        width: auto;
+    }
+    .password-first-opt{
         width: 100%;
     }
-  }
+    button, input{
+        min-width: 100%
+    }
+    .password-options{
+        display: block;
+    }
+}
