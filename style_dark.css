@@ -88,6 +88,7 @@ button:hover{
 .togler{
     background-color: #10B981;
     border-radius: 100%;
+    padding: 13px 15px
 }
 
 .length-section{
