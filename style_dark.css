@@ -130,6 +130,7 @@ button:hover{
     section{
         max-width: 100%;
         width: auto;
+        height: auto;
     }
     .password-first-opt{
         width: 100%;
